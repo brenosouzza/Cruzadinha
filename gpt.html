@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Palavras Cruzadas</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    
+    td {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Palavras Cruzadas</h1>
+  
+  <table id="tabuleiro"></table>
+  
+  <h2>Pistas</h2>
+  <ol id="pistas"></ol>
+  
+  <script>
+    // Definir o tabuleiro de palavras cruzadas
+    const tabuleiro = [
+      ['c', 'a', 't', 's'],
+      ['o', 'n', 'r', 't'],
+      ['m', 'a', 's', 'i'],
+      ['p', 'e', 'a', 'l']
+    ];
+
+    // Definir as pistas para as palavras
+    const pistas = [
+      { palavra: 'cat', dica: 'Um animal de estimação' },
+      { palavra: 'rat', dica: 'Um roedor' },
+      { palavra: 'soap', dica: 'Usado para lavar as mãos' },
+      { palavra: 'melon', dica: 'Uma fruta suculenta' }
+    ];
+
+    // Função para imprimir o tabuleiro
+    function imprimirTabuleiro(tabuleiro) {
+      const tabela = document.getElementById('tabuleiro');
+      
+      for (let i = 0; i < tabuleiro.length; i++) {
+        const linha = document.createElement('tr');
+        
+        for (let j = 0; j < tabuleiro[i].length; j++) {
+          const celula = document.createElement('td');
+          celula.textContent = tabuleiro[i][j];
+          linha.appendChild(celula);
+        }
+        
+        tabela.appendChild(linha);
+      }
+    }
+
+    // Função para imprimir as pistas
+    function imprimirPistas(pistas) {
+      const lista = document.getElementById('pistas');
+      
+      for (let i = 0; i < pistas.length; i++) {
+        const item = document.createElement('li');
+        item.textContent = `${i + 1}. ${pistas[i].dica}`;
+        lista.appendChild(item);
+      }
+    }
+
+    // Função para verificar se uma palavra está correta
+    function verificarPalavra(palavra, resposta) {
+      return palavra === resposta;
+    }
+
+    // Função principal do jogo
+    function jogarPalavrasCruzadas() {
+      imprimirTabuleiro(tabuleiro);
+      imprimirPistas(pistas);
+      
+      const resposta = prompt('Digite sua resposta:');
+      
+      for (let i = 0; i < pistas.length; i++) {
+        if (verificarPalavra(pistas[i].palavra, resposta)) {
+          alert('Parabéns! Você acertou a palavra!');
+          return;
+        }
+      }
+      
+      alert('Resposta incorreta. Tente novamente!');
+    }
+
+    // Iniciar o jogo
+    jogarPalavrasCruzadas();
+  </script>
+</body>
+</html>
