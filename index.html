@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,8 +17,8 @@
             </div>
             <table>
                 <tr>
-                    <td id="campo1">1</td>
-                    <td id="campo2">2</td>
+                    <td id="campo1"></td>
+                    <td id="campo2"></td>
                     <td id="campo3"></td>
                     <td id="campo4"></td>
                     <td id="campo5"> </td>
@@ -473,18 +473,25 @@
 </html>
 
 <script>
-    var listaPalavras = ["cpu","ula","registradores","ram","rom","eprom","flash","memoria-de-massa","dma","cs","address-bus","data-bus","i5","i7","dual-core","quad-core","threads","cache"];
+    // var listaPalavras = ["cpu","ula","registradores","ram","rom","eprom","flash","memoria-de-massa","dma","cs","address-bus","data-bus","i5","i7","dual-core","quad-core","threads","cache"];
 
 function verificar() {
     var palavraDigitada = inputPalavraLinha1.value;
-      for(var i = 0; i<= listaPalavras.length; i++ )
-        if(palavraDigitada == listaPalavras[i]) {
+      
+        if(palavraDigitada == 'cpu') {
             alert("você acertou!")
-            break
-
             
+            campo1.innerHTML = 'C';
+            campo21.innerHTML = 'P';
+            campo40.innerHTML = 'U';
         }
-        else {console.log("errou" + [i])}
+         if (palavraDigitada == 'ula') {
+            alert("você acertou!")
+            campo40.innerHTML = 'U'
+            campo41.innerHTML = 'L';
+            campo42.innerHTML = 'A';
+            }
+    
 }
 
 
@@ -512,5 +519,6 @@ function verDicas() {
         <p>11.Sequências de instruções que podem ser executadas concorrentemente dentro de um processo, situadas no CPU permitem que o usuário faça diversas tarefas simultaneamente</p> <br>
         <p>12.Usada para armazenar informações temporariamente, tornando o computador mais rápido.
         </p>`
-}
+    }
+
 </script>
