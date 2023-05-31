@@ -10,31 +10,51 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .divContainerCrosswords {
-    height: 85%;
+    height: 100%;
     border: black solid 2px;
+    border-radius: 30px;
     width: 50%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
+
+    
 
 }
 
-.divDicas {
-    border: black solid 2px;
-}
-
-table {
-    border-collapse: collapse;
+.campo {
+    border: 1px currentColor black;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: darkblue;
     
 }
 
-td {
-    border: 1px solid black;
-    width: 20px;
-    height: 20px;
-   
+.utilizado {
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+
+/* .divDicas {
+    border: black solid 2px;
+} */
+
+table {
+    border-collapse: separate;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.campo:hover {
+    cursor: pointer;
 }
