@@ -25,7 +25,7 @@
                     <td id="campo8" class="campo utilizado"><sup>3</sup></td>
                     <td id="campo9" class="campo utilizado"></td>
                     <td id="campo10" class="campo utilizado"></td>
-                    <td id="campo11" class="campo utilizado"></td>
+                    <td id="campo11" class="campo utilizado"><sup>14</sup></td>
                     <td id="campo12" class="campo utilizado"></td>
                     <td id="campo13" class="campo utilizado"></td>
                     <td id="campo14" class="campo utilizado"></td>
@@ -39,7 +39,7 @@
                   <tr>
                     <td id="campo21" class="campo utilizado"></td>
                     <td id="campo22" class="campo"></td>
-                    <td id="campo23" class="campo utilizado"></td>
+                    <td id="campo23" class="campo utilizado"><sup>10</sup></td>
                     <td id="campo23a" class="campo utilizado"></td>
                     <td id="campo24" class="campo"></td>
                     <td id="campo25" class="campo"></td>
@@ -85,7 +85,7 @@
                     <td id="campo61" class="campo"></td>
                     <td id="campo62" class="campo utilizado"></td>
                     <td id="campo63" class="campo"></td>
-                    <td id="campo64" class="campo utilizado"></td>
+                    <td id="campo64" class="campo utilizado"><sup>11</sup></td>
                     <td id="campo65" class="campo"></td>
                     <td id="campo66" class="campo"></td>
                     <td id="campo67" class="campo"></td>
@@ -127,12 +127,12 @@
                   <tr>
                     <td id="campo100" class="campo"></td>
                     <td id="campo101" class="campo"></td>
-                    <td id="campo102" class="campo utilizado"><sup>4</sup></td>
-                    <td id="campo103" class="campo utilizado"></td>
+                    <td id="campo102" class="campo utilizado"></td>
+                    <td id="campo103" class="campo utilizado"><SUP>4</SUP></td>
                     <td id="campo104" class="campo utilizado"></td>
-                    <td id="campo105" class="campo utilizado"></td>
+                    <td id="campo105" class="campo utilizado"><sup>5</sup></td>
                     <td id="campo106" class="campo"></td>
-                    <td id="campo107" class="campo utilizado"></td>
+                    <td id="campo107" class="campo utilizado"><sup>17</sup></td>
                     <td id="campo108" class="campo"></td>
                     <td id="campo109" class="campo"></td>
                     <td id="campo110" class="campo"></td>
@@ -140,10 +140,10 @@
                     <td id="campo112" class="campo"></td>
                     <td id="campo113" class="campo"></td>
                     <td id="campo114" class="campo"></td>
-                    <td id="campo115" class="campo utilizado"></td>
+                    <td id="campo115" class="campo utilizado"><sup>15</sup></td>
                     <td id="campo116" class="campo"></td>
                     <td id="campo117" class="campo"></td>
-                    <td id="campo118" class="campo utilizado"></td>
+                    <td id="campo118" class="campo utilizado"><sup>16</sup></td>
                     <td id="campo119" class="campo"></td>
                   </tr>
                   <tr>
@@ -156,12 +156,12 @@
                     <td id="campo127" class="campo"></td>
                     <td id="campo128" class="campo utilizado"></td>
                     <td id="campo129" class="campo"></td>
-                    <td id="campo130" class="campo utilizado"></td>
+                    <td id="campo130" class="campo utilizado"><sup>12</sup></td>
                     <td id="campo131" class="campo"></td>
                     <td id="campo132" class="campo"></td>
                     <td id="campo133" class="campo"></td>
                     <td id="campo134" class="campo"></td>
-                    <td id="campo135" class="campo utilizado"></td>
+                    <td id="campo135" class="campo utilizado"><sup>9</sup></td>
                     <td id="campo136" class="campo utilizado"></td>
                     <td id="campo137" class="campo"></td>
                     <td id="campo138" class="campo"></td>
@@ -172,16 +172,16 @@
                     <td id="campo141" class="campo"></td>
                     <td id="campo142" class="campo"></td>
                     <td id="campo143" class="campo"></td>
-                    <td id="campo144" class="campo utilizado"></td>
+                    <td id="campo144" class="campo utilizado"><sup>8</sup></td>
                     <td id="campo145" class="campo utilizado"></td>
                     <td id="campo146" class="campo utilizado"></td>
                     <td id="campo147" class="campo utilizado"></td>
                     <td id="campo148" class="campo utilizado"></td>
-                    <td id="campo149" class="campo utilizado"></td>
+                    <td id="campo149" class="campo utilizado"><sup>13</sup></td>
                     <td id="campo150" class="campo utilizado"></td>
                     <td id="campo151" class="campo utilizado"></td>
                     <td id="campo152" class="campo utilizado"></td>
-                    <td id="campo153" class="campo utilizado"></td>
+                    <td id="campo153" class="campo utilizado"><sup>6</sup></td>
                     <td id="campo154" class="campo utilizado"></td>
                     <td id="campo155" class="campo utilizado"></td>
                     <td id="campo156" class="campo utilizado"></td>
@@ -307,7 +307,7 @@
                     <td id="campo264" class="campo"></td>
                     <td id="campo265" class="campo utilizado"></td>
                     <td id="campo266" class="campo"></td>
-                    <td id="campo267" class="campo utilizado"></td>
+                    <td id="campo267" class="campo utilizado"><sup>7</sup></td>
                     <td id="campo268" class="campo utilizado"></td>
                     <td id="campo269" class="campo utilizado"></td>
                     <td id="campo270" class="campo utilizado"></td>
@@ -327,14 +327,13 @@
             
               <div class="divInput">
                   Insira a palavra:<input type="text" id="inputPalavraLinha1">
+                  <button onclick="verificar()" class="btnVerificar">Verificar</button>
                 </div>
-                <button onclick="verificar()" class="btnVerificar">Verificar</button>
 
         </div>
 
         <br> 
         <div class="divDicas" id="divDicas">
-        
         <button onclick="verDicas()">Ver dicas</button>
         </div>
 </body>
@@ -342,34 +341,50 @@
 
 <script>
     // var listaPalavras = ["cpu","ula","registradores","ram","rom","eprom","flash","memoria-de-massa","dma","cs","address-bus","data-bus","i5","i7","dual-core","quad-core","threads","cache"];
+
+    var cruzadinhaFinal = [];
     
 function verificar() {
     var palavraDigitada = inputPalavraLinha1.value.toLowerCase();
+
+    
     
 
         if(palavraDigitada == 'cpu') {
-            alert("você acertou!")
-            
-            campo1.innerHTML = 'C';
+
+            campo1.innerHTML = '<sup>1</sup>C';
             campo21.innerHTML = 'P';
-            campo40.innerHTML = 'U';
+            campo40.innerHTML = '<sup>2</sup>U';
+            campo1.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo21.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo40.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         }
 
         // uça
         if (palavraDigitada == 'ula') {
-            alert("você acertou!")
-            campo40.innerHTML = 'U'
+            
+            campo40.innerHTML = '<sup>2</sup>U';
             campo41.innerHTML = 'L';
             campo42.innerHTML = 'A';
+
+            campo40.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo41.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo42.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
+
+
         }
 
         // registradores
         if (palavraDigitada == 'registradores') {
-            alert("você acertou!")
-            campo8.innerHTML = 'R'
+            
+            campo8.innerHTML = '<sup>3</sup>R'
             campo9.innerHTML = 'E';
             campo10.innerHTML = 'G';
-            campo11.innerHTML = 'I';
+            campo11.innerHTML = '<sup>14</sup>I';
             campo12.innerHTML = 'S';
             campo13.innerHTML = 'T';
             campo14.innerHTML = 'R';
@@ -379,74 +394,140 @@ function verificar() {
             campo18.innerHTML = 'R';
             campo19.innerHTML = 'E';
             campo20.innerHTML = 'S';
+            campo8.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo9.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo10.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo11.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo12.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo13.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo14.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo15.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo16.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo17.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo18.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo19.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo20.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         }
         // RAM
         if (palavraDigitada == 'ram') {
-            campo103.innerHTML = 'R';
+            campo103.innerHTML = '<sup>4</sup>R';
             campo124.innerHTML = 'A';
-            campo144.innerHTML = 'M';
+            campo144.innerHTML = '<sup>8</sup>M';
+            campo103.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo124.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo144.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         }
         //ROM
         if (palavraDigitada == 'rom') {
-            campo105.innerHTML = 'R';
+            campo105.innerHTML = '<sup>5</sup>R ';
             campo126.innerHTML = 'O';
             campo146.innerHTML = 'M';
+            campo105.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo126.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo146.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         }
         //EPROM 
         if (palavraDigitada == 'eprom') {
-            campo153.innerHTML = 'E';
+            campo153.innerHTML = '<sup>6</sup>E';
             campo173.innerHTML = 'P';
             campo193.innerHTML = 'R';
             campo213.innerHTML = 'O';
             campo233.innerHTML = 'M';
+            campo153.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo173.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo193.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo213.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo233.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         }
 
         //7 flash
         if (palavraDigitada == 'flash') {
-            alert("você acertou!")
-            campo267.innerHTML = 'F'
+            
+            campo267.innerHTML = '<sup>7</sup>F'
             campo268.innerHTML = 'L';
             campo269.innerHTML = 'A';
             campo270.innerHTML = 'S';
             campo271.innerHTML = 'H';
+            campo267.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo268.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo269.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo270.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo271.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         }
         //8 memoria de massa
         if (palavraDigitada == 'memoria de massa') {
-            alert("você acertou!")
-            campo144.innerHTML = 'M'
+            
+            campo144.innerHTML = '<sup>8</sup>M'
             campo145.innerHTML = 'E';
             campo146.innerHTML = 'M';
             campo147.innerHTML = 'O';
             campo148.innerHTML = 'R';
-            campo149.innerHTML = 'I';
+            campo149.innerHTML = '<sup>13</sup>I';
             campo150.innerHTML = 'A';
             campo151.innerHTML = '';
             campo152.innerHTML = 'D';
-            campo153.innerHTML = 'E';
+            campo153.innerHTML = '<sup>6</sup>E';
             campo154.innerHTML = '';
             campo155.innerHTML = 'M';
             campo156.innerHTML = 'A';
             campo157.innerHTML = 'S';
             campo158.innerHTML = 'S';
             campo159.innerHTML = 'A';
+            campo144.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo145.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo146.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo147.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo148.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo149.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo150.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo151.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo152.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo153.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo154.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo155.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo156.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo157.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo158.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo159.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         }
         //9 dma
         if (palavraDigitada == 'dma') {
-            alert("você acertou!")
-            campo135.innerHTML = 'D'
+            
+            campo135.innerHTML = '<sup>9</sup>D'
             campo155.innerHTML = 'M';
             campo175.innerHTML = 'A';
+            campo135.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo155.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo175.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         }
         //10 cs foi
         if (palavraDigitada == 'cs') {
-            alert("você acertou!")
-            campo23.innerHTML = 'C'
+            
+            campo23.innerHTML = '<sup>10</sup>C'
             campo23a.innerHTML = 'S';
+            campo23.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo23a.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         }
         //11 address bus
         if (palavraDigitada == 'address bus') {
-            alert("você acertou!")
-            campo64.innerHTML = 'A'
+            
+            campo64.innerHTML = '<sup>11</sup>A'
             campo84.innerHTML = 'D';
             campo104.innerHTML = 'D';
             campo125.innerHTML = 'R';
@@ -457,10 +538,23 @@ function verificar() {
             campo225.innerHTML = 'B';
             campo245.innerHTML = 'U';
             campo265.innerHTML = 'S';
+            campo64.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo84.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo104.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo125.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo145.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo165.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo185.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo205.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo225.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo245.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo265.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         }//12 databus
         if (palavraDigitada == 'data bus') {
-            alert("você acertou!")
-            campo130.innerHTML = 'D'
+            
+            campo130.innerHTML = '<sup>12</sup>D'
             campo150.innerHTML = 'A';
             campo170.innerHTML = 'T';
             campo190.innerHTML = 'A';
@@ -468,16 +562,33 @@ function verificar() {
             campo230.innerHTML = 'B';
             campo250.innerHTML = 'U';
             campo270.innerHTML = 'S';
+            campo130.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo150.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo170.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo190.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo210.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo230.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo250.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo270.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         }
         // q12 foi
 
         if (palavraDigitada == 'cache') { 
-            alert("você acertou!") 
-            campo23.innerHTML = 'C'; 
+             
+            campo23.innerHTML = '<sup>10</sup>C'; 
             campo42.innerHTML = 'A'; 
             campo62.innerHTML = 'C'; 
             campo82.innerHTML = 'H'; 
-            campo102.innerHTML = 'E'; 
+            campo102.innerHTML = 'E';
+            campo23.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo42.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo62.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo82.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+            campo102.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+
+            cruzadinhaFinal.push(palavraDigitada);
         } 
 
  
@@ -487,21 +598,22 @@ function verificar() {
 
                 if (palavraDigitada == 'threads') { 
 
-                alert("você acertou!") 
-
-                campo107.innerHTML = 'T'; 
-
+                campo107.innerHTML = '<sup>17</sup>T'; 
                 campo128.innerHTML = 'H'; 
-
                 campo148.innerHTML = 'R'; 
-
                 campo168.innerHTML = 'E'; 
-
                 campo188.innerHTML = 'A'; 
-
                 campo208.innerHTML = 'D'; 
+                campo228.innerHTML = 'S';
+                campo107.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+                campo128.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+                campo148.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+                campo168.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+                campo188.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+                campo208.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';
+                campo228.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
 
-                campo228.innerHTML = 'S'; 
+                cruzadinhaFinal.push(palavraDigitada);
 
                 } 
 
@@ -512,25 +624,28 @@ function verificar() {
 
                 if (palavraDigitada == 'quad core') { 
 
-                alert("você acertou!") 
+                 
 
-                campo118.innerHTML = 'Q'; 
-
+                campo118.innerHTML = '<sup>16</sup>Q'; 
                 campo139.innerHTML = 'U'; 
-
                 campo159.innerHTML = 'A'; 
-
                 campo179.innerHTML = 'D'; 
-
                 campo199.innerHTML = ''; 
-
                 campo219.innerHTML = 'C'; 
-
                 campo239.innerHTML = 'O'; 
-
                 campo259.innerHTML = 'R'; 
-
                 campo279.innerHTML = 'E'; 
+                campo118.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo139.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo159.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo179.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo199.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo219.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo239.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo259.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo279.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+
+                cruzadinhaFinal.push(palavraDigitada);
 
                 } 
 
@@ -541,25 +656,28 @@ function verificar() {
 
                 if (palavraDigitada == 'dual core') { 
 
-                alert("você acertou!") 
+                 
 
-                campo115.innerHTML = 'D'; 
-
+                campo115.innerHTML = '<sup>15</sup>D'; 
                 campo136.innerHTML = 'U'; 
-
                 campo156.innerHTML = 'A'; 
-
                 campo176.innerHTML = 'L'; 
-
                 campo196.innerHTML = ''; 
-
                 campo216.innerHTML = 'C'; 
-
                 campo236.innerHTML = 'O'; 
-
                 campo256.innerHTML = 'R'; 
-
                 campo276.innerHTML = 'E'; 
+                campo115.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo136.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo156.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo176.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo196.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo216.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo236.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo256.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo276.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+
+                cruzadinhaFinal.push(palavraDigitada);
 
                 } 
 
@@ -570,11 +688,12 @@ function verificar() {
 
                 if (palavraDigitada == 'i7') { 
 
-                alert("você acertou!") 
-
-                campo11.innerHTML = 'I'; 
-
+                campo11.innerHTML = '<sup>14</sup>I'; 
                 campo30.innerHTML = '7'; 
+                campo11.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo30.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+
+                cruzadinhaFinal.push(palavraDigitada);
 
                 } 
 
@@ -585,43 +704,48 @@ function verificar() {
 
                 if (palavraDigitada == 'i5') { 
 
-                alert("você acertou!") 
+                campo149.innerHTML = '<sup>13</sup>I'; 
+                campo169.innerHTML = '5';
+                campo149.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; 
+                campo169.style.backgroundColor = 'rgba(0, 128, 0, 0.5)';  
 
-                campo149.innerHTML = 'I'; 
-
-                campo169.innerHTML = '5'; 
+                cruzadinhaFinal.push(palavraDigitada);
 
                 } 
+
+                if (cruzadinhaFinal.length == 18) {
+                  alert("Parabéns, você finalizou a cruzadinha!!!")
+                }
 
  
 
 }
 
-
 function verDicas() {
-    divDicas.innerHTML = `<p>1.Esta parte do processador realiza todas as operações lógicas e aritméticas</p> <br>
-        <p>2. O cérebro do computador, essencial para seu funcionamento, executa as instruções e processando os dados necessários para realizar tarefas e executar aplicativos.</p> <br>
-        <p>3. Responsável por realizar operações aritméticas e lógicas nos dados processados pelo computador, especializados para executar essas operações de forma eficiente e rápida. É um componente importante da CPU.</p> <br>
-        <p>4. Componentes de armazenamento de dados de alta velocidade encontrados na CPU, cada registrador é capaz de armazenar e manipular um único dado de tamanho fixo.</p> <br>
-        <p>5. Usada para armazenar dados temporariamente enquanto o computador está em funcionamento, ao desligá-lo os dados são perdidos</p> <br>
-        <p>6. Memória não volátil que armazena dados permanentes que não podem ser alterados ou apagados</p> <br>
-        <p>7. emória não volátil que permite que os dados sejam apagados e reprogramados</p> <br>
-        <p>8. Memória não volátil amplamente utilizada em dispositivos eletrônicos portáteis, é mais rápida e tem maior densidade de armazenamento do que a EPROM</p> <br>
-        <p>9. Usada para armazenar dados permanentes a longo prazo, como arquivos, programas e sistema operacional</p> <br>
-        <p>10. Serve para transferir dados diretamente entre dispositivos periféricos e a memória principal, sem a necessidade de intervenção da CPU. Útil quando grandes volumes de dados precisam ser movidos entre dispositivos periféricos e a memória</p> <br>
-        <p>11. Sinal de controle utilizado em sistemas digitais para selecionar um dispositivo específico em um barramento compartilhado</p> <br>
-        <p>12. Responsável por transmitir os endereços de memória ou portas de entrada/saída aos quais a CPU precisa acessar para ler ou gravar dados</p> <br>
-        <p>13. Responsável pela transferência de dados entre a CPU e a memória ou dispositivos de entrada/saída</p> <br>
-        <p>14. Baseados nas arquiteturas Skylake, Kaby Lake, Coffee Lake, Comet Lake e Tiger Lake, fabricados pela Intel Corporation, fabricado em 2009 <br>
-        </p>
-        <p>15. Introduzida em 2008 com o lançamento da geração Nehalem, é baseada em diferentes arquiteturas, projetados para oferecer um desempenho de alta potência <br>
-        </p>
-        <p>16. Possui quatro núcleos de processamento independentes em um único chip, por exemplo AMD Ryzen 5 3600</p> <br>
-        <p>17. Possui dois núcleos de processamento independentes em um único chip, por exemplo Intel Core i3-9100 
-        </p> <br>
-        <p>18. Sequências de instruções que podem ser executadas concorrentemente dentro de um processo, situadas no CPU permitem que o usuário faça diversas tarefas simultaneamente</p> <br>
-        <p>19. Usada para armazenar informações temporariamente, tornando o computador mais rápido.
-        </p>`
+      divDicas.innerHTML = `<div class="divTextoDicas">
+      <p>1.(Vertical) O cérebro do computador, essencial para seu funcionamento, executa as instruções e processando os dados necessários para realizar tarefas e executar aplicativos.</p> <br>
+          <p>2.(Horizontal) Responsável por realizar operações aritméticas e lógicas nos dados processados pelo computador, especializados para executar essas operações de forma eficiente e rápida. É um componente importante da CPU.</p> <br>
+          <p>3.(Horizontal) Componentes de armazenamento de dados de alta velocidade encontrados na CPU, cada registrador é capaz de armazenar e manipular um único dado de tamanho fixo.</p> <br>
+          <p>4.(Vertical) Usada para armazenar dados temporariamente enquanto o computador está em funcionamento, ao desligá-lo os dados são perdidos</p> <br>
+          <p>5.(Vertical) Memória não volátil que armazena dados permanentes que não podem ser alterados ou apagados</p> <br>
+          <p>6.(Vertical) Memória não volátil que permite que os dados sejam apagados e reprogramados</p> <br>
+          <p>7.(Horizontal) Memória não volátil amplamente utilizada em dispositivos eletrônicos portáteis, é mais rápida e tem maior densidade de armazenamento do que a EPROM</p> <br>
+          <p>8.(Horizontal) Usada para armazenar dados permanentes a longo prazo, como arquivos, programas e sistema operacional</p> <br>
+          <p>9.(Vertical) Serve para transferir dados diretamente entre dispositivos periféricos e a memória principal, sem a necessidade de intervenção da CPU. Útil quando grandes volumes de dados precisam ser movidos entre dispositivos periféricos e a memória</p> <br>
+          <p>10.(Horizontal) Sinal de controle utilizado em sistemas digitais para selecionar um dispositivo específico em um barramento compartilhado</p> <br>
+          <p>10.a)(Vertical) Usada para armazenar informações temporariamente, tornando o computador mais rápido.</p> <br>
+          <p>11.(Vertical)  Responsável por transmitir os endereços de memória ou portas de entrada/saída aos quais a CPU precisa acessar para ler ou gravar dados</p> <br>
+          <p>12.(Vertical) Responsável pela transferência de dados entre a CPU e a memória ou dispositivos de entrada/saída</p> <br>
+          <p>13.(Vertical) Baseados nas arquiteturas Skylake, Kaby Lake, Coffee Lake, Comet Lake e Tiger Lake, fabricados pela Intel Corporation, fabricado em 2009</p> <br>
+          <p>14.(Vertical) Introduzida em 2008 com o lançamento da geração Nehalem, é baseada em diferentes arquiteturas, projetados para oferecer um desempenho de alta potência 
+          </p><br>
+          <p>15.(Vertical) Possui dois núcleos de processamento independentes em um único chip, por exemplo Intel Core i3-9100<br>
+          </p><br>
+          <p>16.(Vertical) Possui quatro núcleos de processamento independentes em um único chip, por exemplo AMD Ryzen 5 3600</p> <br>
+          <p>17.(Vertical) Sequências de instruções que podem ser executadas concorrentemente dentro de um processo, situadas no CPU permitem que o usuário faça diversas tarefas simultaneamente 
+          </p> <br>
+          </div>
+          `
     }
 
 </script>
